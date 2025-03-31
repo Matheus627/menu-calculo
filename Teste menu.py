@@ -1,6 +1,7 @@
+nome = input('Insira seu nome aqui: ')
+
 while True:
 
-    nome = input('Insira seu nome aqui: ')
 
     print('')
     print(f'Bem vindo ao menu {nome}!!!')
@@ -13,6 +14,8 @@ while True:
     print('Opção 5: Sair')
     print('')
     opcao = int(input(f'{nome}, informe a opção desejada: '))
+
+    
 
     if(opcao==1):
         print('')
@@ -28,6 +31,7 @@ while True:
             print('')
             print(f'Sua média é {media}, você está reprovado, estude mais {nome}!')
 
+
     elif(opcao==2):
         print('')
         n1 = float(input('Insira sua nota 1: '))
@@ -38,6 +42,7 @@ while True:
         print('')
         print(f'{nome}, a soma das notas é {soma}')
 
+
     elif(opcao==3):
         print('')
         base = float(input('Informe o valor da base do retângulo: '))
@@ -45,6 +50,8 @@ while True:
         areaR = base*altura
         print('')
         print(f'{nome}, o valor da área do retângulo é {areaR}')
+
+    
 
     elif(opcao==4):
         print('')
@@ -54,17 +61,28 @@ while True:
         print('')
         print(f'{nome}, o valor da área do triângulo é {areaT}')
 
+
     elif(opcao==5):
         print('')
         print(f'Certo, você quer sair, tchau {nome}!')
         print('Saindo...')
-    
-    break
-print('')
-print('Fim, obrigado por usar o menu de cálculo!')
-print('')
-print('')
-print('')
-print('')
-print('')
-print('')
+        print('')
+        print('Fim, obrigado por usar o menu de cálculo!')
+        print('')
+        print('')
+        print('')
+        print('')
+        print('')
+        print('')
+        break
+
+    else:
+        print('')
+        print('')
+        print('')
+        print('Opção inválida, tente novamente')
+        print('')
+        print('')
+        print('')
+        print('')
+        print('')
